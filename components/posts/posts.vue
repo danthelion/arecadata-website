@@ -8,9 +8,9 @@
         :to="`/${postType}/${post.slug}`"
         class="card card--clickable"
       >
-        <template v-if="postType === 'projects'">
+        <template v-if="postType === 'projects' || postType === 'blog'">
           <span class="flex-1">
-            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
+            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ formatDate(post.createdAt) }}</h6>
             <h3 class="card-title">{{ post.title }}</h3>
             <p class="mt-2">{{ post.description }}</p>
           </span>

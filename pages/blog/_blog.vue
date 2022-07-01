@@ -6,6 +6,11 @@
       </nav>
 
       <article>
+        <img
+            v-if="post.cover"
+            class="cover-image"
+            :src="post.cover"
+        >
         <h5
           v-if="post.createdAt"
           class="inline-block py-1 px-2 my-2 bg-gray text-white text-sm font-medium rounded-sm whitespace-no-wrap"
