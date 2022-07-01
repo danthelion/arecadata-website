@@ -89,7 +89,7 @@ npm run generate
 
 2. Change the value on these lines
 
-   - `static/admin/config.yml` — `site_url` & `logo_url`
+   - `static/admin/config.yml` — `site_url` & `logo_url` ok
    - `content/site/info.json` — `sitename`, `sitedescription` & `sitelang`
    - `package.json` — `name`, `description`, `author` & `repository.url`
    - `pages/index.vue` — The start page of your new website!
