@@ -25,7 +25,7 @@ In order to get the data into **Materialize**, first, we will consume the EventS
 
 I wrote a small Python script to load our data into Redpanda (Kafka-compatible storage).
 
-```python
+```py[producer.py]
 def produce_events_from_url(url: str, topic: str) -> None:
     for event in EventSource(url):
         if event.event == "message":
